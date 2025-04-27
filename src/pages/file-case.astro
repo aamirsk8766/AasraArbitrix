@@ -1,0 +1,489 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout 
+    title="File a Case" 
+    description="Submit your case for mediation, arbitration, or conciliation with Aasra Arbitrix Mediation Hub LLP."
+>
+    <HeroSection 
+        title="File a Case" 
+        subtitle="Begin the process of resolving your dispute efficiently and effectively" 
+        showButton={false}
+    />
+    
+    <section class="section">
+        <div class="container">
+            <div class="case-filing-intro">
+                <p>Filing a case with Aasra Arbitrix is the first step toward resolving your dispute through professional mediation, arbitration, or conciliation. Please complete the form below with accurate information to help us understand your case and provide the most appropriate assistance.</p>
+                <p>All information submitted is strictly confidential and will only be used for case evaluation and processing.</p>
+            </div>
+            
+            <div class="case-form-container">
+                <form id="case-form" class="case-form">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName" class="required">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" class="required">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="email" class="required">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="required">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address" class="required">Address</label>
+                            <input type="text" id="address" name="address" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="city" class="required">City</label>
+                                <input type="text" id="city" name="city" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="state" class="required">State</label>
+                                <input type="text" id="state" name="state" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pincode" class="required">PIN Code</label>
+                                <input type="text" id="pincode" name="pincode" class="form-control" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Other Party Information</legend>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="otherPartyName" class="required">Name (Individual or Organization)</label>
+                                <input type="text" id="otherPartyName" name="otherPartyName" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="otherPartyContact">Contact Person (if organization)</label>
+                                <input type="text" id="otherPartyContact" name="otherPartyContact" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="otherPartyEmail">Email Address (if known)</label>
+                                <input type="email" id="otherPartyEmail" name="otherPartyEmail" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="otherPartyPhone">Phone Number (if known)</label>
+                                <input type="tel" id="otherPartyPhone" name="otherPartyPhone" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="relationship" class="required">Your Relationship with Other Party</label>
+                            <select id="relationship" name="relationship" class="form-control" required>
+                                <option value="">Select Relationship</option>
+                                <option value="business">Business Partners</option>
+                                <option value="employer">Employer-Employee</option>
+                                <option value="family">Family Members</option>
+                                <option value="neighbors">Neighbors</option>
+                                <option value="landlord">Landlord-Tenant</option>
+                                <option value="contractual">Contractual Relationship</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="relationshipOtherGroup" style="display: none;">
+                            <label for="relationshipOther" class="required">Please Specify Relationship</label>
+                            <input type="text" id="relationshipOther" name="relationshipOther" class="form-control">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Dispute Information</legend>
+                        
+                        <div class="form-group">
+                            <label for="disputeType" class="required">Type of Dispute</label>
+                            <select id="disputeType" name="disputeType" class="form-control" required>
+                                <option value="">Select Dispute Type</option>
+                                <option value="commercial">Commercial/Business</option>
+                                <option value="contract">Contract</option>
+                                <option value="property">Property/Real Estate</option>
+                                <option value="employment">Employment</option>
+                                <option value="family">Family</option>
+                                <option value="consumer">Consumer</option>
+                                <option value="intellectual">Intellectual Property</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="disputeTypeOtherGroup" style="display: none;">
+                            <label for="disputeTypeOther" class="required">Please Specify Dispute Type</label>
+                            <input type="text" id="disputeTypeOther" name="disputeTypeOther" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="disputeSummary" class="required">Brief Summary of the Dispute</label>
+                            <textarea id="disputeSummary" name="disputeSummary" rows="5" class="form-control" required></textarea>
+                            <small>Please provide a concise summary of the dispute, including key facts and issues. (Max 500 words)</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resolution" class="required">Desired Outcome or Resolution</label>
+                            <textarea id="resolution" name="resolution" rows="3" class="form-control" required></textarea>
+                            <small>What resolution would you like to achieve through this process?</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredService" class="required">Preferred Dispute Resolution Service</label>
+                            <select id="preferredService" name="preferredService" class="form-control" required>
+                                <option value="">Select Service</option>
+                                <option value="mediation">Mediation</option>
+                                <option value="arbitration">Arbitration</option>
+                                <option value="conciliation">Conciliation</option>
+                                <option value="unsure">Not Sure - Need Guidance</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Previous Resolution Attempts</label>
+                            <div class="checkbox-group">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="attemptDirect" name="attemptDirect" value="direct">
+                                    <label for="attemptDirect">Direct negotiation with the other party</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="attemptLawyer" name="attemptLawyer" value="lawyer">
+                                    <label for="attemptLawyer">Communication through lawyers</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="attemptMediation" name="attemptMediation" value="mediation">
+                                    <label for="attemptMediation">Previous mediation attempt</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="attemptCourt" name="attemptCourt" value="court">
+                                    <label for="attemptCourt">Court proceedings (ongoing or concluded)</label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="attemptNone" name="attemptNone" value="none">
+                                    <label for="attemptNone">No previous resolution attempts</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        
+                        <div class="form-group">
+                            <label for="urgency" class="required">Urgency Level</label>
+                            <select id="urgency" name="urgency" class="form-control" required>
+                                <option value="">Select Urgency Level</option>
+                                <option value="immediate">Immediate (within days)</option>
+                                <option value="urgent">Urgent (within 2 weeks)</option>
+                                <option value="standard">Standard (within 1 month)</option>
+                                <option value="flexible">Flexible (no specific timeline)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalComments">Additional Comments or Special Requirements</label>
+                            <textarea id="additionalComments" name="additionalComments" rows="3" class="form-control"></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                            <label for="termsAgreement" class="required">I have read and agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.</label>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="infoAccuracy" name="infoAccuracy" required>
+                            <label for="infoAccuracy" class="required">I confirm that the information provided is accurate to the best of my knowledge.</label>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-accent">Submit Case</button>
+                        <button type="reset" class="btn btn-secondary">Reset Form</button>
+                    </div>
+                    
+                    <div id="form-response" class="form-response"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section next-steps-section" style="background-color: var(--neutral-100);">
+        <div class="container">
+            <h2 class="section-title">What Happens Next?</h2>
+            
+            <div class="next-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Case Review</h3>
+                    <p>We will review your submission within 1-2 business days and contact you to confirm receipt.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Initial Consultation</h3>
+                    <p>Our team will schedule an initial consultation to discuss the case details and recommended approach.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Other Party Contact</h3>
+                    <p>With your consent, we will reach out to the other party to invite them to participate in the resolution process.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Process Scheduling</h3>
+                    <p>Once all parties agree to proceed, we will schedule the mediation, arbitration, or conciliation sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Handle conditional form fields
+        const relationship = document.getElementById('relationship');
+        const relationshipOtherGroup = document.getElementById('relationshipOtherGroup');
+        const relationshipOther = document.getElementById('relationshipOther');
+        
+        const disputeType = document.getElementById('disputeType');
+        const disputeTypeOtherGroup = document.getElementById('disputeTypeOtherGroup');
+        const disputeTypeOther = document.getElementById('disputeTypeOther');
+        
+        relationship?.addEventListener('change', () => {
+            if (relationship.value === 'other') {
+                relationshipOtherGroup.style.display = 'block';
+                relationshipOther.required = true;
+            } else {
+                relationshipOtherGroup.style.display = 'none';
+                relationshipOther.required = false;
+                relationshipOther.value = '';
+            }
+        });
+        
+        disputeType?.addEventListener('change', () => {
+            if (disputeType.value === 'other') {
+                disputeTypeOtherGroup.style.display = 'block';
+                disputeTypeOther.required = true;
+            } else {
+                disputeTypeOtherGroup.style.display = 'none';
+                disputeTypeOther.required = false;
+                disputeTypeOther.value = '';
+            }
+        });
+        
+        // Handle form submission
+        const caseForm = document.getElementById('case-form');
+        const formResponse = document.getElementById('form-response');
+        
+        if (caseForm) {
+            caseForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // In a real implementation, you would send the form data to a server
+                // This is a simulation for demo purposes
+                
+                // Show loading state
+                formResponse.innerHTML = '<p class="loading">Submitting your case...</p>';
+                
+                // Simulate form submission with a delay
+                setTimeout(() => {
+                    formResponse.innerHTML = '<div class="success-message"><h3>Thank you for your submission!</h3><p>We have received your case details and will review them shortly. A confirmation email has been sent to your registered email address with your case reference number.</p><p>Our team will contact you within 1-2 business days to discuss the next steps.</p></div>';
+                    caseForm.reset();
+                    
+                    // Scroll to the response message
+                    formResponse.scrollIntoView({ behavior: 'smooth' });
+                }, 2000);
+            });
+        }
+    });
+</script>
+
+<style>
+    .case-filing-intro {
+        max-width: 800px;
+        margin: 0 auto var(--spacing-xl);
+        text-align: center;
+    }
+    
+    .case-form-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .case-form {
+        background-color: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-md);
+    }
+    
+    fieldset {
+        border: none;
+        border-bottom: 1px solid var(--neutral-200);
+        padding: var(--spacing-lg);
+        margin: 0 0 var(--spacing-md);
+    }
+    
+    fieldset:last-of-type {
+        border-bottom: none;
+    }
+    
+    legend {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        padding: 0 var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    .form-group {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: var(--spacing-xs);
+        font-weight: 600;
+    }
+    
+    .form-group small {
+        display: block;
+        color: var(--neutral-600);
+        font-size: 0.85rem;
+        margin-top: var(--spacing-xs);
+    }
+    
+    .checkbox-group {
+        margin-top: var(--spacing-sm);
+    }
+    
+    .form-checkbox {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .form-checkbox input {
+        margin-top: 5px;
+        margin-right: var(--spacing-sm);
+    }
+    
+    .form-actions {
+        padding: var(--spacing-lg);
+        display: flex;
+        gap: var(--spacing-md);
+    }
+    
+    .btn-secondary {
+        background-color: var(--neutral-200);
+        color: var(--neutral-700);
+    }
+    
+    .btn-secondary:hover {
+        background-color: var(--neutral-300);
+    }
+    
+    .form-response {
+        padding: 0 var(--spacing-lg) var(--spacing-lg);
+    }
+    
+    .success-message {
+        background-color: #d4edda;
+        color: #155724;
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+    }
+    
+    .success-message h3 {
+        color: #155724;
+        margin-top: 0;
+    }
+    
+    .next-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+    }
+    
+    .step-card {
+        background-color: white;
+        padding: var(--spacing-lg);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        text-align: center;
+        position: relative;
+    }
+    
+    .step-number {
+        background-color: var(--accent-red);
+        color: white;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        margin: 0 auto var(--spacing-md);
+    }
+    
+    .step-card h3 {
+        color: var(--primary-blue);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    @media (max-width: 992px) {
+        .next-steps {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+        
+        .form-actions {
+            flex-direction: column;
+        }
+        
+        .next-steps {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

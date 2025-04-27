@@ -1,0 +1,147 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <img src="/images/aasra-logo.jpg" alt="Aasra Arbitrix Mediation Hub LLP" class="footer-logo" />
+                <p>Empowering Dispute Resolution Through Dialogue</p>
+                <p>Established 2025</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/process">Process</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/file-case">File a Case</a></li>
+                        <li><a href="/terms">Terms of Use</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <address>
+                        <p>123 Legal Avenue, Suite 456</p>
+                        <p>Mumbai, Maharashtra 400001</p>
+                        <p>Email: info@aasraarbitrix.com</p>
+                        <p>Phone: +91 22 1234 5678</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; {currentYear} Aasra Arbitrix Mediation Hub LLP. All rights reserved. Project By <a href="https://www.linkedin.com/in/aamir-shaikh-aa3b6121b/" style="color: white; text-decoration: underline;"><b>Aamir Shaikh</b></a>
+            </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: var(--primary-blue-dark);
+        color: white;
+        padding: var(--spacing-xl) 0 var(--spacing-md);
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: var(--spacing-lg);
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-logo {
+        height: 30Vh;
+        width: auto;
+        margin-bottom: var(--spacing-md);
+        background-color: white;
+        border-radius: var(--border-radius);
+        padding: 5px;
+    }
+    
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .footer-section h4 {
+        color: white;
+        margin-bottom: var(--spacing-md);
+        font-size: 1.1rem;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-section li {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .footer-section a {
+        color: var(--neutral-200);
+        transition: color 0.3s ease;
+    }
+    
+    .footer-section a:hover {
+        color: white;
+    }
+    
+    address {
+        font-style: normal;
+        line-height: 1.6;
+    }
+    
+    address p {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: var(--spacing-md);
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--neutral-300);
+    }
+    
+    @media (max-width: 992px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+        }
+        
+        .footer-links {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .footer-links {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

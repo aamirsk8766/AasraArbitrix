@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout 
+    title="Terms of Use" 
+    description="Legal terms and conditions for using the services of Aasra Arbitrix Mediation Hub LLP."
+>
+    <HeroSection 
+        title="Terms of Use" 
+        subtitle="Please read these terms carefully before using our services" 
+        showButton={false}
+    />
+    
+    <section class="section">
+        <div class="container legal-content">
+            <p class="last-updated">Last Updated: May 15, 2025</p>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using the services provided by Aasra Arbitrix Mediation Hub LLP (hereinafter referred to as "Aasra Arbitrix," "we," "us," or "our"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use our services.</p>
+            
+            <h2>2. Services Description</h2>
+            <p>Aasra Arbitrix provides alternative dispute resolution services, including mediation, arbitration, and conciliation. Our services are designed to help parties resolve disputes outside of traditional litigation. The specific services provided will be agreed upon in a separate service agreement.</p>
+            
+            <h2>3. User Eligibility</h2>
+            <p>You must be at least 18 years of age and have the legal capacity to enter into binding agreements to use our services. By using our services, you represent and warrant that you meet these eligibility requirements.</p>
+            
+            <h2>4. User Accounts</h2>
+            <p>Some of our services may require you to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
+            
+            <h2>5. User Responsibilities</h2>
+            <p>When using our services, you agree to:</p>
+            <ol class="sub-list">
+                <li>Provide accurate, complete, and current information</li>
+                <li>Participate in the dispute resolution process in good faith</li>
+                <li>Comply with all applicable laws and regulations</li>
+                <li>Respect the confidentiality of the process</li>
+                <li>Pay all agreed-upon fees in a timely manner</li>
+            </ol>
+            
+            <h2>6. Fees and Payment</h2>
+            <p>Our fee structure will be provided to you before you engage our services. All fees must be paid in accordance with the payment terms specified in your service agreement. Failure to pay fees may result in the suspension or termination of services.</p>
+            
+            <h2>7. Confidentiality</h2>
+            <p>Confidentiality is a fundamental aspect of our dispute resolution services. All information shared during the process is confidential, subject to the following exceptions:</p>
+            <ol class="sub-list">
+                <li>When disclosure is required by law</li>
+                <li>When there is a threat of harm to an individual</li>
+                <li>When all parties consent to disclosure</li>
+                <li>For anonymized data used for research or educational purposes</li>
+            </ol>
+            
+            <h2>8. Intellectual Property</h2>
+            <p>All content on our website, including text, graphics, logos, and software, is the property of Aasra Arbitrix or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute our content without our express written permission.</p>
+            
+            <h2>9. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Aasra Arbitrix shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
+            <ol class="sub-list">
+                <li>Your use or inability to use our services</li>
+                <li>Any conduct or content of any third party on our services</li>
+                <li>Any outcome of the dispute resolution process</li>
+                <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+            </ol>
+            
+            <h2>10. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Aasra Arbitrix and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including, without limitation, reasonable legal and accounting fees, arising out of or in any way connected with your access to or use of our services or your violation of these Terms of Use.</p>
+            
+            <h2>11. Modifications to Terms</h2>
+            <p>We reserve the right to modify these Terms of Use at any time. The modified terms will be effective upon posting. Your continued use of our services after the posting of the modified terms constitutes your agreement to the modified terms.</p>
+            
+            <h2>12. Termination</h2>
+            <p>We may terminate or suspend your access to our services immediately, without prior notice or liability, for any reason whatsoever, including, without limitation, if you breach these Terms of Use. Upon termination, your right to use our services will immediately cease.</p>
+            
+            <h2>13. Governing Law</h2>
+            <p>These Terms of Use shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any dispute arising under these terms shall be resolved exclusively in the courts of Mumbai, Maharashtra.</p>
+            
+            <h2>14. Severability</h2>
+            <p>If any provision of these Terms of Use is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these Terms of Use will otherwise remain in full force and effect and enforceable.</p>
+            
+            <h2>15. Entire Agreement</h2>
+            <p>These Terms of Use, together with any service agreement you enter into with us, constitute the entire agreement between you and Aasra Arbitrix regarding our services and supersede and replace any prior agreements we might have had between us regarding the services.</p>
+            
+            <h2>16. Contact Information</h2>
+            <p>If you have any questions about these Terms of Use, please contact us at:</p>
+            <address>
+                Aasra Arbitrix Mediation Hub LLP<br>
+                123 Legal Avenue, Suite 456<br>
+                Mumbai, Maharashtra 400001<br>
+                Email: legal@aasraarbitrix.com<br>
+                Phone: +91 22 1234 5678
+            </address>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .legal-content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .last-updated {
+        font-style: italic;
+        color: var(--neutral-600);
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .legal-content h2 {
+        color: var(--primary-blue);
+        margin-top: var(--spacing-xl);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .legal-content p {
+        margin-bottom: var(--spacing-md);
+        line-height: 1.6;
+    }
+    
+    .sub-list {
+        margin-bottom: var(--spacing-md);
+        padding-left: var(--spacing-xl);
+    }
+    
+    .sub-list li {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    address {
+        padding: var(--spacing-md);
+        background-color: var(--neutral-100);
+        border-radius: var(--border-radius);
+        margin-top: var(--spacing-md);
+        line-height: 1.6;
+    }
+</style>

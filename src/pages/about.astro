@@ -1,0 +1,253 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout 
+    title="About Us" 
+    description="Learn about Aasra Arbitrix Mediation Hub LLP, our mission, vision, values, and commitment to dispute resolution excellence."
+>
+    <HeroSection 
+        title="About Aasra Arbitrix" 
+        subtitle="Committed to excellence in dispute resolution since 2025" 
+        showButton={false}
+    />
+    
+    <section class="section">
+        <div class="container">
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Aasra Arbitrix team in a meeting" />
+                </div>
+                
+                <div class="about-content">
+                    <h2>Our Story</h2>
+                    <p>Established in 2025, Aasra Arbitrix Mediation Hub LLP was founded with a vision to transform how legal disputes are resolved in India. Recognizing the need for effective alternatives to traditional litigation, we created a space where parties could find fair, efficient, and cost-effective resolution to their disputes.</p>
+                    <p>Our team combines decades of legal expertise with specialized training in alternative dispute resolution methods to provide the highest quality mediation, arbitration, and conciliation services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section mission-section" style="background-color: var(--neutral-100);">
+        <div class="container">
+            <div class="mission-vision">
+                <div class="mission-box">
+                    <h2>Our Mission</h2>
+                    <p>To provide accessible, efficient, and fair dispute resolution services that empower individuals and organizations to resolve conflicts amicably, preserving relationships and avoiding the cost and stress of litigation.</p>
+                </div>
+                
+                <div class="mission-box">
+                    <h2>Our Vision</h2>
+                    <p>To be recognized as the premier dispute resolution center in India, known for our integrity, expertise, and commitment to achieving fair outcomes for all parties involved in the resolution process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section values-section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Integrity</h3>
+                    <p>We uphold the highest ethical standards in all our interactions, ensuring confidentiality, neutrality, and fairness throughout the dispute resolution process.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Neutrality</h3>
+                    <p>Our mediators and arbitrators remain impartial, providing an unbiased environment where all parties can express themselves freely and work toward equitable solutions.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Efficiency</h3>
+                    <p>We are committed to resolving disputes in a timely manner, helping parties avoid the lengthy delays often associated with traditional court proceedings.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Empathy</h3>
+                    <p>We recognize that disputes can be emotionally challenging, and approach each case with compassion, respect, and understanding of the human aspects involved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section team-section" style="background-color: var(--neutral-100);">
+        <div class="container">
+            <h2 class="section-title">Our Expert Team</h2>
+            <p class="section-subtitle">Our professional mediators and arbitrators bring decades of combined experience across various legal domains</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rajiv Sharma" />
+                    </div>
+                    <h3>Rajiv Sharma</h3>
+                    <p class="member-title">Senior Mediator & Founder</p>
+                    <p>Former High Court Judge with over 25 years of experience in commercial and civil dispute resolution.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Priya Mehta" />
+                    </div>
+                    <h3>Priya Mehta</h3>
+                    <p class="member-title">Lead Arbitrator</p>
+                    <p>Corporate law specialist with expertise in commercial arbitration and international dispute resolution.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.pexels.com/photos/8197534/pexels-photo-8197534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Vikram Desai" />
+                    </div>
+                    <h3>Vikram Desai</h3>
+                    <p class="member-title">Conciliation Expert</p>
+                    <p>Specialized in family and business partnership dispute resolution with a focus on preserving relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Work With Us?</h2>
+                <p>Experience the Aasra Arbitrix difference in resolving your disputes efficiently and amicably.</p>
+                <div class="cta-buttons">
+                    <a href="/file-case" class="btn btn-accent">File a Case</a>
+                    <a href="/contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .about-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        align-items: center;
+    }
+    
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .mission-vision {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .mission-box {
+        background-color: white;
+        padding: var(--spacing-xl);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+    }
+    
+    .value-card {
+        background-color: white;
+        padding: var(--spacing-lg);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        border-left: 4px solid var(--primary-blue);
+    }
+    
+    .value-card h3 {
+        color: var(--primary-blue);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+    }
+    
+    .team-member {
+        background-color: white;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .member-image img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .team-member h3 {
+        margin: var(--spacing-md) var(--spacing-md) var(--spacing-xs);
+    }
+    
+    .member-title {
+        color: var(--primary-blue);
+        font-weight: 600;
+        margin: 0 var(--spacing-md) var(--spacing-sm);
+    }
+    
+    .team-member p:not(.member-title) {
+        margin: 0 var(--spacing-md) var(--spacing-md);
+    }
+    
+    .cta-section {
+        background-color: var(--primary-blue);
+        color: white;
+    }
+    
+    .cta-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .cta-content h2 {
+        color: white;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+    
+    @media (max-width: 992px) {
+        .about-section, 
+        .mission-vision {
+            grid-template-columns: 1fr;
+        }
+        
+        .team-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .values-grid, 
+        .team-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+    }
+</style>

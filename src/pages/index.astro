@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="Home">
+    <HeroSection 
+        title="Empowering Dispute Resolution Through Dialogue" 
+        subtitle="Aasra Arbitrix Mediation Hub LLP offers professional mediation, arbitration, and conciliation services to resolve disputes efficiently without litigation."
+    />
+    
+    <section class="section">
+        <div class="container">
+            <div class="about-preview">
+                <div class="about-content">
+                    <h2>About Aasra Arbitrix</h2>
+                    <p>Established in 2025, Aasra Arbitrix Mediation Hub LLP is a premier dispute resolution center dedicated to providing efficient, cost-effective alternatives to traditional litigation.</p>
+                    <p>Our team of experienced mediators and arbitrators are committed to facilitating fair, impartial resolution processes that empower parties to find mutually beneficial solutions.</p>
+                    <div class="about-cta">
+                        <a href="/about" class="btn btn-primary">Learn More About Us</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Professional mediators in discussion" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section services-preview" style="background-color: var(--neutral-100);">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">We offer comprehensive dispute resolution services tailored to your specific needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://images.pexels.com/photos/3778966/pexels-photo-3778966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mediation Service" />
+                    </div>
+                    <h3>Mediation</h3>
+                    <p>A voluntary process where our neutral mediator facilitates communication between parties to reach a mutually acceptable resolution.</p>
+                    <a href="/services#mediation" class="service-link">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Arbitration Service" />
+                    </div>
+                    <h3>Arbitration</h3>
+                    <p>A more formal process where our arbitrator reviews evidence and makes a binding decision to resolve the dispute efficiently.</p>
+                    <a href="/services#arbitration" class="service-link">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Conciliation Service" />
+                    </div>
+                    <h3>Conciliation</h3>
+                    <p>A cooperative dispute resolution process where our conciliator helps parties find common ground and develop solutions.</p>
+                    <a href="/services#conciliation" class="service-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Resolve Your Dispute?</h2>
+                <p>Our experienced mediators and arbitrators are here to help you find a fair and efficient resolution.</p>
+                <div class="cta-buttons">
+                    <a href="/file-case" class="btn btn-accent">File a Case</a>
+                    <a href="/contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .about-preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        align-items: center;
+    }
+    
+    .about-content {
+        padding-right: var(--spacing-lg);
+    }
+    
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .about-cta {
+        margin-top: var(--spacing-lg);
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+    }
+    
+    .service-card {
+        background-color: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        padding: var(--spacing-lg);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .service-icon {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .service-icon img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: var(--border-radius);
+    }
+    
+    .service-card h3 {
+        color: var(--primary-blue);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .service-link {
+        display: inline-block;
+        margin-top: var(--spacing-sm);
+        font-weight: 600;
+    }
+    
+    .cta-section {
+        background-color: var(--primary-blue);
+        color: white;
+    }
+    
+    .cta-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .cta-content h2 {
+        color: white;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+    
+    @media (max-width: 992px) {
+        .about-preview {
+            grid-template-columns: 1fr;
+        }
+        
+        .about-content {
+            padding-right: 0;
+        }
+        
+        .services-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+    }
+</style>

@@ -1,0 +1,380 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout 
+    title="Our Services" 
+    description="Explore our comprehensive dispute resolution services including mediation, arbitration, and conciliation at Aasra Arbitrix Mediation Hub LLP."
+>
+    <HeroSection 
+        title="Our Services" 
+        subtitle="Professional dispute resolution services tailored to your specific needs" 
+        showButton={false}
+    />
+    
+    <section class="section">
+        <div class="container">
+            <div class="services-intro">
+                <p>At Aasra Arbitrix, we offer comprehensive alternative dispute resolution services designed to help parties resolve conflicts efficiently and amicably. Our professional mediators and arbitrators are trained to handle a wide range of disputes across various domains, from business disagreements to family conflicts.</p>
+                <p>Each of our services is tailored to meet the specific needs of your situation, providing a structured yet flexible approach to dispute resolution.</p>
+            </div>
+            
+            <div class="service-details" id="mediation">
+                <div class="service-image">
+                    <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mediation process" />
+                </div>
+                
+                <div class="service-content">
+                    <h2>Mediation</h2>
+                    <p>Mediation is a voluntary, confidential process where our neutral mediator facilitates communication between parties to help them reach a mutually acceptable resolution.</p>
+                    
+                    <h3>When to Choose Mediation</h3>
+                    <ul>
+                        <li>When preserving relationships is important</li>
+                        <li>For disputes requiring creative, flexible solutions</li>
+                        <li>When parties want to maintain control over the outcome</li>
+                        <li>For cases where confidentiality is a priority</li>
+                    </ul>
+                    
+                    <h3>Benefits of Mediation</h3>
+                    <ul>
+                        <li>Faster resolution compared to litigation</li>
+                        <li>Cost-effective approach</li>
+                        <li>Preserves relationships between parties</li>
+                        <li>Allows for creative, customized solutions</li>
+                        <li>Completely confidential process</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-details reverse" id="arbitration">
+                <div class="service-image">
+                    <img src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Arbitration process" />
+                </div>
+                
+                <div class="service-content">
+                    <h2>Arbitration</h2>
+                    <p>Arbitration is a more formal process where our qualified arbitrator reviews evidence, hears arguments, and makes a binding decision to resolve the dispute.</p>
+                    
+                    <h3>When to Choose Arbitration</h3>
+                    <ul>
+                        <li>When a definitive, binding decision is needed</li>
+                        <li>For complex disputes requiring specialized expertise</li>
+                        <li>When negotiations have failed but litigation is undesirable</li>
+                        <li>For cases requiring faster resolution than court proceedings</li>
+                    </ul>
+                    
+                    <h3>Benefits of Arbitration</h3>
+                    <ul>
+                        <li>Binding, final resolution</li>
+                        <li>More formal than mediation but less rigid than court proceedings</li>
+                        <li>Access to arbitrators with specialized knowledge</li>
+                        <li>Faster and more cost-effective than litigation</li>
+                        <li>Private and confidential process</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-details" id="conciliation">
+                <div class="service-image">
+                    <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Conciliation process" />
+                </div>
+                
+                <div class="service-content">
+                    <h2>Conciliation</h2>
+                    <p>Conciliation is a cooperative dispute resolution process where our conciliator takes a more active role in helping parties find common ground and develop solutions.</p>
+                    
+                    <h3>When to Choose Conciliation</h3>
+                    <ul>
+                        <li>When communication between parties has broken down</li>
+                        <li>For disputes where emotions are running high</li>
+                        <li>When parties need more guidance than mediation but prefer not to use arbitration</li>
+                        <li>For cases requiring creative problem-solving</li>
+                    </ul>
+                    
+                    <h3>Benefits of Conciliation</h3>
+                    <ul>
+                        <li>More directed than mediation but still voluntary</li>
+                        <li>Focuses on rebuilding relationships</li>
+                        <li>Conciliator can suggest possible solutions</li>
+                        <li>Confidential and flexible process</li>
+                        <li>Empowers parties while providing structure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section specialized-services" style="background-color: var(--neutral-100);">
+        <div class="container">
+            <h2 class="section-title">Specialized Dispute Areas</h2>
+            <p class="section-subtitle">Our experts handle a wide range of dispute types with specialized knowledge in each area</p>
+            
+            <div class="specialized-grid">
+                <div class="specialized-card">
+                    <h3>Commercial Disputes</h3>
+                    <p>Contract disagreements, partnership conflicts, intellectual property disputes, and other business-related issues.</p>
+                </div>
+                
+                <div class="specialized-card">
+                    <h3>Family Matters</h3>
+                    <p>Divorce settlements, child custody arrangements, inheritance disputes, and other family-related conflicts.</p>
+                </div>
+                
+                <div class="specialized-card">
+                    <h3>Workplace Conflicts</h3>
+                    <p>Employment disputes, harassment claims, discrimination issues, and workplace relationship problems.</p>
+                </div>
+                
+                <div class="specialized-card">
+                    <h3>Real Estate Disputes</h3>
+                    <p>Property boundary issues, tenant-landlord conflicts, construction disputes, and real estate contract disagreements.</p>
+                </div>
+                
+                <div class="specialized-card">
+                    <h3>Consumer Disputes</h3>
+                    <p>Product liability claims, service quality issues, warranty disputes, and consumer rights conflicts.</p>
+                </div>
+                
+                <div class="specialized-card">
+                    <h3>Community Conflicts</h3>
+                    <p>Neighbor disputes, community association disagreements, public interest conflicts, and local governance issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section fee-section">
+        <div class="container">
+            <h2 class="section-title">Fee Structure</h2>
+            <p class="section-subtitle">Transparent and fair pricing for our dispute resolution services</p>
+            
+            <div class="fee-grid">
+                <div class="fee-card">
+                    <h3>Initial Consultation</h3>
+                    <p class="fee-amount">₹5,000</p>
+                    <ul>
+                        <li>90-minute session</li>
+                        <li>Case assessment</li>
+                        <li>Process recommendation</li>
+                        <li>Fee estimate for full service</li>
+                    </ul>
+                </div>
+                
+                <div class="fee-card">
+                    <h3>Mediation Services</h3>
+                    <p class="fee-amount">Starting from ₹15,000</p>
+                    <ul>
+                        <li>Professional mediator</li>
+                        <li>Up to three sessions</li>
+                        <li>Documentation of agreement</li>
+                        <li>Follow-up support</li>
+                    </ul>
+                </div>
+                
+                <div class="fee-card">
+                    <h3>Arbitration Services</h3>
+                    <p class="fee-amount">Starting from ₹30,000</p>
+                    <ul>
+                        <li>Qualified arbitrator</li>
+                        <li>Evidence review</li>
+                        <li>Hearings and deliberation</li>
+                        <li>Binding award issuance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="fee-note">* Fees may vary based on the complexity of the case, number of parties involved, and duration of the process. A detailed fee structure will be provided during the initial consultation.</p>
+        </div>
+    </section>
+    
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Resolve Your Dispute?</h2>
+                <p>Contact us today to schedule an initial consultation and take the first step toward resolution.</p>
+                <div class="cta-buttons">
+                    <a href="/file-case" class="btn btn-accent">File a Case</a>
+                    <a href="/contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .services-intro {
+        max-width: 800px;
+        margin: 0 auto var(--spacing-xxl);
+        text-align: center;
+    }
+    
+    .service-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        align-items: center;
+        margin-bottom: var(--spacing-xxl);
+        padding-bottom: var(--spacing-xl);
+        border-bottom: 1px solid var(--neutral-200);
+    }
+    
+    .service-details:last-of-type {
+        border-bottom: none;
+    }
+    
+    .service-details.reverse {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .service-details.reverse .service-image {
+        order: 2;
+    }
+    
+    .service-details.reverse .service-content {
+        order: 1;
+    }
+    
+    .service-image img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .service-content h2 {
+        color: var(--primary-blue);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .service-content h3 {
+        margin-top: var(--spacing-lg);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .service-content ul {
+        padding-left: var(--spacing-lg);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .service-content li {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .specialized-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+    }
+    
+    .specialized-card {
+        background-color: white;
+        padding: var(--spacing-lg);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .specialized-card h3 {
+        color: var(--primary-blue);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .fee-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+        margin: var(--spacing-xl) 0;
+    }
+    
+    .fee-card {
+        background-color: white;
+        padding: var(--spacing-lg);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        text-align: center;
+    }
+    
+    .fee-card h3 {
+        color: var(--primary-blue);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .fee-amount {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--accent-red);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .fee-card ul {
+        text-align: left;
+        padding-left: var(--spacing-xl);
+    }
+    
+    .fee-card li {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .fee-note {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--neutral-600);
+        margin-top: var(--spacing-lg);
+    }
+    
+    .cta-section {
+        background-color: var(--primary-blue);
+        color: white;
+    }
+    
+    .cta-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .cta-content h2 {
+        color: white;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+    
+    @media (max-width: 992px) {
+        .service-details,
+        .service-details.reverse {
+            grid-template-columns: 1fr;
+        }
+        
+        .service-details.reverse .service-image,
+        .service-details.reverse .service-content,
+        .service-image,
+        .service-content {
+            order: initial;
+        }
+        
+        .specialized-grid,
+        .fee-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .specialized-grid,
+        .fee-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+    }
+</style>
